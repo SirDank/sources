@@ -1,0 +1,33 @@
+{
+  "name": "SirDank's Sources",
+  "identifier": "dev.sirdank.sources",
+  "subtitle": "Apps by SirDank",
+  "description": "Sideloadable iOS apps by SirDank. Add this source to AltStore, SideStore or any store that takes AltStore sources.",
+  "iconURL": "https://raw.githubusercontent.com/SKonstruct/SKapsule-iOS/main/Natives/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+  "website": "https://github.com/SirDank/sources",
+  "tintColor": "#AA4A7F",
+  "apps": [
+    {
+      "name": "SKapsule",
+      "bundleIdentifier": "com.skonstruct.skapsule",
+      "developerName": "SKonstruct",
+      "subtitle": "Spiral Knights for iOS",
+      "localizedDescription": "Play Spiral Knights on iPhone and iPad. SKapsule runs the real desktop client on your device: a bundled Java 25 runtime, the game's OpenGL renderer translated to OpenGL ES, OpenAL audio, touch and controller support, and Web or Steam login.\n\nExperimental. JIT is required: enable it with the built-in helper (pairing file + LocalDevVPN) or the StikDebug app. The game (about 440 MB) downloads from the official servers on first launch. Unofficial, not affiliated with Grey Havens or Three Rings.",
+      "iconURL": "https://raw.githubusercontent.com/SKonstruct/SKapsule-iOS/main/Natives/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+      "tintColor": "#AA4A7F",
+      "category": "games",
+      "versions": [],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.private.security.container-required",
+          "get-task-allow",
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.private.memorystatus"
+        ],
+        "privacy": {}
+      }
+    }
+  ],
+  "news": []
+}
