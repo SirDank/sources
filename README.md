@@ -15,8 +15,21 @@ https://raw.githubusercontent.com/SirDank/sources/main/apps.json
 | --- | --- |
 | [SKapsule](https://github.com/SKonstruct/SKapsule-iOS) | Spiral Knights on iPhone and iPad |
 
+Coming later (no public release yet): Wintur, Windows command-line software on iPhone and iPad,
+and MoUtils, offline utilities with on-device AI.
+
 ## Adding a release
 
-Each app's own repo publishes its IPA as a GitHub release. To list it here, run that repo's
-`scripts/update-source.sh <ipa> <tag> apps.json` on the released file (it records the size and
-sha256 that stores verify), then commit `apps.json`.
+Each app publishes its IPA as a GitHub release. Download the released file and run
+
+```sh
+./update.sh <ipa> <download URL> ["release notes"] [release date, ISO 8601 UTC]
+```
+
+It matches the app by bundle identifier, records the size and sha256 that stores verify, and
+edits `apps.json` only. Review and commit it yourself.
+
+Apps without a public release wait in `pending/` instead of `apps.json`, because AltStore fails to
+load a source that contains an app with no versions. `update.sh` moves an app from `pending/` into
+`apps.json` on its first release. Before that, check its `appPermissions` against the released IPA:
+stores refuse an install whose entitlements or privacy keys differ.
