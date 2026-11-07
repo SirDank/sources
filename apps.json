@@ -1,8 +1,8 @@
 {
   "name": "SirDank's Sources",
   "identifier": "dev.sirdank.sources",
-  "subtitle": "Apps by SirDank",
-  "description": "Sideloadable iOS apps by SirDank. Add this source to AltStore, SideStore or any store that takes AltStore sources.",
+  "subtitle": "Apps by SirDank and friends",
+  "description": "Sideloadable iOS apps by SirDank, plus a few third-party apps listed unmodified from their authors' GitHub releases. Add this source to AltStore, SideStore or any store that takes AltStore sources.",
   "nsfw": false,
   "iconURL": "https://raw.githubusercontent.com/SKonstruct/SKapsule-iOS/main/Natives/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
   "website": "https://github.com/SirDank/sources",
@@ -18,6 +18,16 @@
       "tintColor": "#AA4A7F",
       "category": "games",
       "versions": [
+        {
+          "version": "1.0.2",
+          "buildVersion": "5",
+          "date": "2026-11-07T17:37:27Z",
+          "localizedDescription": "Mods can no longer replace the behavior, spawn table and variant table configs. A first launch that downloads the game is no longer called a failed start. Apply Mods before the first launch asks for a launch first, and cancelling the JIT wait is no longer reported as a failure.",
+          "downloadURL": "https://github.com/SKonstruct/SKapsule-iOS/releases/download/v1.0.2/SKapsule.ipa",
+          "size": 90504519,
+          "sha256": "6b48f4a780c22a4d2d9185adb47f83e62d3a4ecd82ee7f98223393614fe47f90",
+          "minOSVersion": "17.4"
+        },
         {
           "version": "1.0.1",
           "buildVersion": "3",
@@ -39,12 +49,126 @@
         ],
         "privacy": {}
       },
-      "version": "1.0.1",
-      "versionDate": "2026-10-24T17:38:30Z",
-      "versionDescription": "Adds Check for Updates. Hardens mod archive parsing, the news feed and log scrubbing. Fixes Download Modpack deleting your own mods, half-applied mods, the game being killed when you leave the app, stalled downloads, Steam login and Steam Guard issues, a built-in JIT hang, and mouse button tracking.",
-      "downloadURL": "https://github.com/SKonstruct/SKapsule-iOS/releases/download/v1.0.1/SKapsule.ipa",
-      "size": 90505644,
-      "sha256": "cf9ebecb35a9ef6b8554b3e0371ed3b7875cfbbeab766def51eb20b4ae7ae608"
+      "version": "1.0.2",
+      "versionDate": "2026-11-07T17:37:27Z",
+      "versionDescription": "Mods can no longer replace the behavior, spawn table and variant table configs. A first launch that downloads the game is no longer called a failed start. Apply Mods before the first launch asks for a launch first, and cancelling the JIT wait is no longer reported as a failure.",
+      "downloadURL": "https://github.com/SKonstruct/SKapsule-iOS/releases/download/v1.0.2/SKapsule.ipa",
+      "size": 90504519,
+      "sha256": "6b48f4a780c22a4d2d9185adb47f83e62d3a4ecd82ee7f98223393614fe47f90"
+    },
+    {
+      "name": "Madeira",
+      "bundleIdentifier": "com.willfaust.madeora",
+      "developerName": "willfaust",
+      "subtitle": "Windows PC games on iPhone and iPad",
+      "localizedDescription": "Run x86-64 Windows PC games on a jailed iPhone or iPad, using FEX-Emu, Wine and DXMT. Includes store sections for Steam, Epic, GOG, EA app and itch.io.\n\nThird-party app by willfaust, listed here unmodified from its GitHub releases. Needs JIT (built-in pairing helper or StikDebug) and iOS 18 or later. Not made or supported by SirDank.",
+      "iconURL": "https://raw.githubusercontent.com/willfaust/Madeira/main/app/Madeira/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "category": "games",
+      "versions": [
+        {
+          "version": "0.2.0",
+          "buildVersion": "5",
+          "date": "2026-11-04T03:29:04Z",
+          "localizedDescription": "Madeira 0.2.0: GOG, EA app and itch.io stores, store tabs, Epic downloads and cloud saves.",
+          "downloadURL": "https://github.com/willfaust/Madeira/releases/download/v0.2.0/Madeira-0.2.0.ipa",
+          "size": 186400561,
+          "sha256": "7cdab35d6029b9a7701775ac794ac2674cac501ec6503465775e7a35ae046154",
+          "minOSVersion": "18.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.kernel.extended-virtual-addressing",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.security.cs.allow-jit",
+          "get-task-allow"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Madeira uses the local network to pair with this device for JIT, without a computer, and to download Steam games from a PC on this network."
+        }
+      },
+      "version": "0.2.0",
+      "versionDate": "2026-11-04T03:29:04Z",
+      "versionDescription": "Madeira 0.2.0: GOG, EA app and itch.io stores, store tabs, Epic downloads and cloud saves.",
+      "downloadURL": "https://github.com/willfaust/Madeira/releases/download/v0.2.0/Madeira-0.2.0.ipa",
+      "size": 186400561,
+      "sha256": "7cdab35d6029b9a7701775ac794ac2674cac501ec6503465775e7a35ae046154"
+    },
+    {
+      "name": "LinuxRunner",
+      "bundleIdentifier": "dev.linuxrunner.app",
+      "developerName": "mxhm11cr",
+      "subtitle": "ARM64 Linux and desktops on iPhone and iPad",
+      "localizedDescription": "Run ARM64 Linux userspace and desktop applications on iPhone and iPad, with Arch Linux ARM and other distributions, a Metal-backed virtual GPU and external display support.\n\nThird-party app by mxhm11cr, listed here unmodified from its GitHub releases. Not made or supported by SirDank.",
+      "iconURL": "https://raw.githubusercontent.com/mxhm11cr/LinuxRunner/main/docs/icon-256.png",
+      "category": "developer",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "buildVersion": "900",
+          "date": "2026-11-01T21:53:14Z",
+          "localizedDescription": "LinuxRunner 1.1.0: DeX mode for external displays, Metal GPU acceleration, more desktops.",
+          "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.0/LinuxRunner-1.1.0-build900.ipa",
+          "size": 21513740,
+          "sha256": "b2d73496307b6d2f535d80f09c00ef06aaf2b324a3ab9a52798999d4155634ae",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Allow Linux applications to connect to computers and services on your local network.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "Programs running in ios-linuxkit will be allowed to track your location in the background.",
+          "NSLocationAlwaysUsageDescription": "Programs running in ios-linuxkit will be allowed to track your location in the background.",
+          "NSLocationWhenInUseUsageDescription": "Programs running in ios-linuxkit will be allowed to see your location."
+        }
+      },
+      "version": "1.1.0",
+      "versionDate": "2026-11-01T21:53:14Z",
+      "versionDescription": "LinuxRunner 1.1.0: DeX mode for external displays, Metal GPU acceleration, more desktops.",
+      "downloadURL": "https://github.com/mxhm11cr/LinuxRunner/releases/download/v1.1.0/LinuxRunner-1.1.0-build900.ipa",
+      "size": 21513740,
+      "sha256": "b2d73496307b6d2f535d80f09c00ef06aaf2b324a3ab9a52798999d4155634ae"
+    },
+    {
+      "name": "Henge",
+      "bundleIdentifier": "com.henge.app",
+      "developerName": "Leviidev",
+      "subtitle": "macOS on iPhone and iPad",
+      "localizedDescription": "Emulate macOS on iOS and iPadOS: install macOS right on the device, no Mac needed. Early release; iPad support has not run on a real iPad yet.\n\nThird-party app by Leviidev, listed here unmodified from its GitHub releases. Needs JIT and iOS 17 or later. Not made or supported by SirDank.",
+      "iconURL": "https://raw.githubusercontent.com/Leviidev/Henge/main/docs/icon.png",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "0.1",
+          "buildVersion": "1",
+          "date": "2026-11-06T13:28:11Z",
+          "localizedDescription": "First release: macOS on iPhone and iPad.",
+          "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.1/Henge.ipa",
+          "size": 8761298,
+          "sha256": "80008c82ab738eab7513a69c16d63b15414b84a37b4c0bde357368073fc67b41",
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "get-task-allow",
+          "dynamic-codesigning",
+          "com.apple.developer.kernel.increased-memory-limit",
+          "com.apple.developer.kernel.extended-virtual-addressing"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Henge uses the local network to pair with this iPhone for JIT, without a computer."
+        }
+      },
+      "version": "0.1",
+      "versionDate": "2026-11-06T13:28:11Z",
+      "versionDescription": "First release: macOS on iPhone and iPad.",
+      "downloadURL": "https://github.com/Leviidev/Henge/releases/download/0.1/Henge.ipa",
+      "size": 8761298,
+      "sha256": "80008c82ab738eab7513a69c16d63b15414b84a37b4c0bde357368073fc67b41"
     }
   ],
   "news": [
