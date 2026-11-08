@@ -15,15 +15,6 @@ https://raw.githubusercontent.com/SirDank/sources/main/apps.json
 | --- | --- |
 | [SKapsule](https://github.com/SKonstruct/SKapsule-iOS) | Spiral Knights on iPhone and iPad |
 
-Third-party apps, listed unmodified from their authors' GitHub releases (the IPA is the one they
-publish, checked against their checksum). They are not mine; report problems to their authors.
-
-| App | What it is |
-| --- | --- |
-| [Madeira](https://github.com/willfaust/Madeira) | Windows PC games on iPhone and iPad (needs JIT, iOS 18+) |
-| [LinuxRunner](https://github.com/mxhm11cr/LinuxRunner) | ARM64 Linux and desktops on iPhone and iPad |
-| [Henge](https://github.com/Leviidev/Henge) | macOS on iPhone and iPad (needs JIT) |
-
 Coming later (no public release yet): Wintur, Windows command-line software on iPhone and iPad,
 and MoUtils, offline utilities with on-device AI.
 
