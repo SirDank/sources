@@ -3,7 +3,7 @@
 # Adds a release of one app to apps.json from its released IPA, so the size, sha256, version
 # and date always match the file users download. The app is matched by bundle identifier in
 # apps.json, or promoted from pending/ on its first release. Edits apps.json (and removes the
-# promoted pending file) only; commit it yourself.
+# promoted pending file) only; commit it yourself. appPermissions.privacy is taken from the IPA.
 # Usage: ./update.sh <ipa> <download URL> ["release notes"] [release date, ISO 8601 UTC]
 # The date defaults to now; pass the release's publish date when adding an older release.
 
@@ -39,6 +39,9 @@ if app is None:  # first release: promote the app from pending/ (AltStore reject
     app = json.load(open(pend))
     s["apps"].append(app)
     os.remove(pend)
+# Stores refuse an install whose privacy keys differ from the IPA's, so take them from it.
+# (The entitlements are not in Info.plist: update appPermissions.entitlements by hand when they change.)
+app.setdefault("appPermissions", {})["privacy"] = {k: info[k] for k in sorted(info) if k.endswith("UsageDescription")}
 # Newest first (AltStore reads the order); re-adding a URL replaces its entry.
 app["versions"] = [v] + [o for o in app["versions"] if o["downloadURL"] != url]
 # Older clients read these flat fields instead of versions[].
