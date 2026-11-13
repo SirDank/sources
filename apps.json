@@ -19,6 +19,26 @@
       "category": "games",
       "versions": [
         {
+          "version": "1.0.4",
+          "buildVersion": "7",
+          "date": "2026-11-13T13:36:45Z",
+          "localizedDescription": "Fixes the game freezing when opening the friends list with Steam sign-in.",
+          "downloadURL": "https://github.com/SKonstruct/SKapsule-iOS/releases/download/v1.0.4/SKapsule.ipa",
+          "size": 90994558,
+          "sha256": "aeb83ee7efb1ef0c09e6009cc3a451ddfcfd9a8372bc7b282329da7f5c8bc89d",
+          "minOSVersion": "17.4"
+        },
+        {
+          "version": "1.0.3",
+          "buildVersion": "6",
+          "date": "2026-11-12T06:27:51Z",
+          "localizedDescription": "Adds a server picker for custom servers, a JIT Setup bottom sheet with pairing on the device itself (iOS 27+), pairing files, StikDebug, TrollStore and jailbreak ways, LocalDevVPN connect, a clearer JIT-not-enabled message, and an Automatic JIT method. Asks for Local Network access.",
+          "downloadURL": "https://github.com/SKonstruct/SKapsule-iOS/releases/download/v1.0.3/SKapsule.ipa",
+          "size": 90994077,
+          "sha256": "8827633ef8e78e0addfd4a8ccaaa7e4f3fcf5c321bb85ce3f215f318cfd2574c",
+          "minOSVersion": "17.4"
+        },
+        {
           "version": "1.0.2",
           "buildVersion": "5",
           "date": "2026-11-07T17:37:27Z",
@@ -47,14 +67,16 @@
           "com.apple.developer.kernel.increased-memory-limit",
           "com.apple.private.memorystatus"
         ],
-        "privacy": {}
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "SKapsule finds this device's debug service and pairs with itself to enable JIT, and connects to private game servers on your network."
+        }
       },
-      "version": "1.0.2",
-      "versionDate": "2026-11-07T17:37:27Z",
-      "versionDescription": "Mods can no longer replace the behavior, spawn table and variant table configs. A first launch that downloads the game is no longer called a failed start. Apply Mods before the first launch asks for a launch first, and cancelling the JIT wait is no longer reported as a failure.",
-      "downloadURL": "https://github.com/SKonstruct/SKapsule-iOS/releases/download/v1.0.2/SKapsule.ipa",
-      "size": 90504519,
-      "sha256": "6b48f4a780c22a4d2d9185adb47f83e62d3a4ecd82ee7f98223393614fe47f90"
+      "version": "1.0.4",
+      "versionDate": "2026-11-13T13:36:45Z",
+      "versionDescription": "Fixes the game freezing when opening the friends list with Steam sign-in.",
+      "downloadURL": "https://github.com/SKonstruct/SKapsule-iOS/releases/download/v1.0.4/SKapsule.ipa",
+      "size": 90994558,
+      "sha256": "aeb83ee7efb1ef0c09e6009cc3a451ddfcfd9a8372bc7b282329da7f5c8bc89d"
     }
   ],
   "news": [
